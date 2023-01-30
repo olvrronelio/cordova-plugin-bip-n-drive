@@ -8,6 +8,15 @@
   </js-module>
 
 
+  <platform name="android">
+
+    <source-file src="src/android/com/galp/plugins/bipdrive/GalpBipDriveImpl.java" target-dir="src/com/galp/plugins/bipdrive"/>
+
+    <framework src="build-extras-bipdrive.gradle" custom="true" type="gradleReference" />
+    <resource-file src="src/android/libs/BipDriveCore.aar" target="libs/BipDriveCore.aar" />
+    <resource-file src="src/android/libs/BipDriveParkingMeter.aar" target="libs/BipDriveParkingMeter.aar" />
+  </platform>
+
   <platform name="ios">
     <preference name="IOS_INIT_ON_LOAD" default="true" />
     <dependency id="cordova-plugin-add-swift-support@2.0.2"/>
