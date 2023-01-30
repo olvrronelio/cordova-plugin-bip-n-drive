@@ -1,0 +1,21 @@
+{
+  "name": "com.galp.plugins.bipdrive",
+  "version": "1.0.0",
+  "description": "Galp Cordova Plugin Bip & Drive",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "cordova": {
+    "id": "com.galp.plugins.bipdrive",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "engines": [],
+  "dependencies": {
+    "extract-zip": "^2.0.1"
+  }
+}

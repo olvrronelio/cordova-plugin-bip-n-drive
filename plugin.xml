@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin id="com.galp.plugins.bipdrive" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>GalpBipDrive</name>
+  <description>Galp Cordova Plugin Bip &amp; Drive</description>
+  <author>Galp Inc</author>
+  <js-module name="GalpBipDriveImpl" src="www/GalpBipDriveImpl.js">
+    <clobbers target="cordova.plugins.GalpBipDriveImpl"/>
+  </js-module>
+
+
+  <platform name="ios">
+    <preference name="IOS_INIT_ON_LOAD" default="true" />
+    <dependency id="cordova-plugin-add-swift-support@2.0.2"/>
+    <config-file parent="/*" target="config.xml">
+      <feature name="GalpBipDriveImpl">
+        <param name="ios-package" value="GalpBipDriveImpl"/>
+      </feature>
+      <preference name="deployment-target" value="13.0" />
+      <preference name="SwiftVersion" value="5" />
+    </config-file>
+    <source-file src="src/ios/GalpBipDriveImpl.swift"/>
+    <lib-file src="libs/iOS/BipDriveCore.framework" />
+  </platform>
+</plugin>
