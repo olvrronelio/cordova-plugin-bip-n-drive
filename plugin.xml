@@ -7,9 +7,9 @@
     <clobbers target="cordova.plugins.GalpBipDriveImpl"/>
   </js-module>
 
-  <preference name="BDRIVE_APP_ID" value="" />
-  <preference name="BDRIVE_APP_KEY" value="" />
-  <preference name="BDRIVE_CLIENT_ID" value="" />
+  <preference name="BDRIVE_APP_ID" default="appId" value="" />
+  <preference name="BDRIVE_APP_KEY" default="appKey" value="" />
+  <preference name="BDRIVE_CLIENT_ID" default="clientId" value="" />
 
   <platform name="android">
 
@@ -53,9 +53,9 @@
 
     <source-file src="src/ios/GalpBipDriveImpl.swift"/>
 
-    <framework src="libs/iOS/Simulator/BipDriveCore.framework" custom="true" embed="true"/>
-    <framework src="libs/iOS/Simulator/BipDriveParkingmeters.framework" custom="true" embed="true"/>
-    <framework src="libs/iOS/Simulator/TPVVInLibrary.framework" custom="true" embed="true"/>
+    <framework src="libs/iOS/Device/BipDriveCore.framework" custom="true" embed="true"/>
+    <framework src="libs/iOS/Device/BipDriveParkingmeters.framework" custom="true" embed="true"/>
+    <framework src="libs/iOS/Device/TPVVInLibrary.framework" custom="true" embed="true"/>
 
   </platform>
 </plugin>
