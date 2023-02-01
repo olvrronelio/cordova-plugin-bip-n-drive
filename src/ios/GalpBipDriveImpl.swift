@@ -1,3 +1,5 @@
+import BipDriveCore
+
 @objc(GalpBipDriveImpl) class GalpBipDriveImpl : CDVPlugin {
   
   @objc(openObject:)

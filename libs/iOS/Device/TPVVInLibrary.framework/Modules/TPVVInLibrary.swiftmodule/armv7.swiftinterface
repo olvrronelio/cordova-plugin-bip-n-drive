@@ -1,0 +1,265 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name TPVVInLibrary
+import CommonCrypto
+import Foundation
+import Swift
+@_exported import TPVVInLibrary
+import UIKit
+import WebKit
+@objc public class TPVVConfiguration : ObjectiveC.NSObject {
+  @objc public var appLicense: Swift.String
+  @objc public var appEnviroment: TPVVInLibrary.EnviromentType
+  @objc public var appFuc: Swift.String
+  @objc public var appTerminal: Swift.String
+  @objc public var appCurrency: Swift.String
+  @objc public var appURLKO: Swift.String
+  @objc public var appURLOK: Swift.String
+  @objc public var appMerchantGroup: Swift.String
+  @objc public var appMerchantURL: Swift.String
+  @objc public var appMerchantData: Swift.String
+  @objc public var appMerchantPayMethods: TPVVInLibrary.PaymentMethod
+  @objc public var appMerchantName: Swift.String
+  @objc public var appMerchantTitular: Swift.String
+  @objc public var appMerchantConsumerLanguage: Swift.String
+  @objc public var appMerchantDescription: Swift.String
+  @objc final public let REQUEST_REFERENCE: Swift.String
+  @objc public static var shared: TPVVInLibrary.TPVVConfiguration
+  @objc deinit
+}
+@objc public protocol DirectPaymentResponseDelegate {
+  @objc func responseDirectPaymentKO(response: (TPVVInLibrary.DirectPaymentResponseKO))
+  @objc func responseDirectPaymentOK(response: (TPVVInLibrary.DirectPaymentResponseOK))
+}
+@objc public class DirectPaymentViewController : TPVVInLibrary.BaseViewController {
+  @objc public var delegate: TPVVInLibrary.DirectPaymentResponseDelegate?
+  @objc public init(orderNumber: Swift.String, amount: Swift.Double, productDescription: Swift.String, transactionType: TPVVInLibrary.TransactionType, identifier: Swift.String, uiViewConfig: TPVVInLibrary.TPVInAppUIConfig)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
+extension DirectPaymentViewController : UIKit.UITextFieldDelegate {
+  @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+@objc public class PaymentUILabelConfig : ObjectiveC.NSObject {
+  @objc public init(text: Swift.String, textColor: UIKit.UIColor, textFont: UIKit.UIFont)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class PaymentUILabel {
+  @objc public static func create(text: Swift.String, textColor: UIKit.UIColor = .black, textFont: UIKit.UIFont) -> TPVVInLibrary.PaymentUILabelConfig
+  @objc deinit
+}
+@objc public class TPVInAppUIConfig : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func setInfoPaymentLabel(_ config: TPVVInLibrary.PaymentUILabelConfig) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setNumberCardLabel(_ config: TPVVInLibrary.PaymentUILabelConfig) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setExpireDateLabel(_ config: TPVVInLibrary.PaymentUILabelConfig) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setCVVLabel(_ config: TPVVInLibrary.PaymentUILabelConfig) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setCancelButtonText(_ text: Swift.String) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setContinueButtonText(_ text: Swift.String) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setLogo(logo: UIKit.UIImage?) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setBackgorundViewColor(color: UIKit.UIColor) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc public func setBackgroundImageView(image: UIKit.UIImage?) -> TPVVInLibrary.TPVInAppUIConfig
+  @objc deinit
+}
+@objc public class BaseViewController : UIKit.UIViewController {
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public class WebViewPaymentResponseOK : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var code: Swift.Int
+  @objc public var desc: Swift.String
+  @objc public var Ds_Date: Swift.String
+  @objc public var Ds_Hour: Swift.String
+  @objc public var Ds_SecurePayment: Swift.String
+  @objc public var Ds_Amount: Swift.String
+  @objc public var Ds_Currency: Swift.String
+  @objc public var Ds_Order: Swift.String
+  @objc public var Ds_MerchantCode: Swift.String
+  @objc public var Ds_Terminal: Swift.String
+  @objc public var Ds_Response: Swift.String
+  @objc public var Ds_Signature: Swift.String
+  @objc public var Ds_TransactionType: Swift.String
+  @objc public var Ds_MerchantData: Swift.String
+  @objc public var Ds_AuthorisationCode: Swift.String
+  @objc public var Ds_ExpiryDate: Swift.String
+  @objc public var Ds_Merchant_Identifier: Swift.String
+  @objc public var Ds_ConsumerLanguage: Swift.String
+  @objc public var Ds_Card_Country: Swift.String
+  @objc public var Ds_Card_Brand: Swift.String
+  @objc public var Ds_Card_Number: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public protocol WebViewPaymentResponseDelegate {
+  @objc func responsePaymentKO(response: (TPVVInLibrary.WebViewPaymentResponseKO))
+  @objc func responsePaymentOK(response: (TPVVInLibrary.WebViewPaymentResponseOK))
+}
+@objc public class WebViewPaymentController : TPVVInLibrary.BaseViewController {
+  @objc public var delegate: TPVVInLibrary.WebViewPaymentResponseDelegate?
+  @objc public init(orderNumber: Swift.String, amount: Swift.Double, productDescription: Swift.String, transactionType: TPVVInLibrary.TransactionType, identifier: Swift.String)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
+extension WebViewPaymentController : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+@objc public class DirectPaymentResponseOK : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var code: Swift.Int
+  @objc public var desc: Swift.String
+  @objc public var Ds_Card_Country: Swift.String
+  @objc public var Ds_Amount: Swift.String
+  @objc public var Ds_MerchantData: Swift.String
+  @objc public var Ds_Currency: Swift.String
+  @objc public var Ds_Order: Swift.String
+  @objc public var Ds_MerchantCode: Swift.String
+  @objc public var Ds_Card_Type: Swift.String
+  @objc public var Ds_Card_Brand: Swift.String
+  @objc public var Ds_AuthorisationCode: Swift.String
+  @objc public var Ds_Language: Swift.String
+  @objc public var Ds_SecurePayment: Swift.String
+  @objc public var Ds_Response: Swift.String
+  @objc public var Ds_TransactionType: Swift.String
+  @objc public var Ds_Terminal: Swift.String
+  @objc public var Ds_ExpiryDate: Swift.String
+  @objc public var Ds_Merchant_Identifier: Swift.String
+  @objc public var Ds_CardNumber: Swift.String
+  @objc public init(code: Swift.Int, desc: Swift.String, Ds_Card_Country: Swift.String, Ds_Amount: Swift.String, Ds_MerchantData: Swift.String, Ds_Currency: Swift.String, Ds_Order: Swift.String, Ds_MerchantCode: Swift.String, Ds_Card_Type: Swift.String, Ds_Card_Brand: Swift.String, Ds_AuthorisationCode: Swift.String, Ds_Language: Swift.String, Ds_SecurePayment: Swift.String, Ds_Response: Swift.String, Ds_TransactionType: Swift.String, Ds_Terminal: Swift.String, Ds_ExpiryDate: Swift.String, Ds_Merchant_Identifier: Swift.String, Ds_CardNumber: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class DirectPaymentResponseKO : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int
+  @objc public var desc: Swift.String
+  @objc public init(code: Swift.Int, desc: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum EnviromentType : Swift.Int {
+  case Test
+  case Integration
+  case Real
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PaymentMethod : Swift.Int {
+  case card
+  case transfer
+  case domiciliation
+  case paypal
+  case oasysWallet
+  case immediatePayment
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum TransactionType : Swift.Int {
+  case traditional
+  case normal
+  case preauthorization
+  case paymentTypeAuthentication
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DirectPaymentResponse : Swift.Codable {
+  public var datosRespuesta: TPVVInLibrary.DatosRespuesta?
+  public var code: Swift.Int
+  public var desc: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct DatosRespuesta : Swift.Codable {
+  public var Ds_Card_Country: Swift.String?
+  public var Ds_Amount: Swift.String?
+  public var Ds_MerchantData: Swift.String?
+  public var Ds_Currency: Swift.String?
+  public var Ds_Order: Swift.String?
+  public var Ds_MerchantCode: Swift.String?
+  public var Ds_Card_Type: Swift.String?
+  public var Ds_Card_Brand: Swift.String?
+  public var Ds_AuthorisationCode: Swift.String?
+  public var Ds_Language: Swift.String?
+  public var Ds_SecurePayment: Swift.String?
+  public var Ds_Response: Swift.String?
+  public var Ds_TransactionType: Swift.String?
+  public var Ds_Terminal: Swift.String?
+  public var Ds_ExpiryDate: Swift.String?
+  public var Ds_Merchant_Identifier: Swift.String?
+  public var Ds_CardNumber: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct WebViewPaymentResponse : Swift.Codable {
+  public var datosPeticion: TPVVInLibrary.datosPeticion?
+  public var code: Swift.Int
+  public var desc: Swift.String
+  public var parameters: TPVVInLibrary.Parameters?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct datosPeticion : Swift.Codable {
+  public var Ds_Signature: Swift.String
+  public var Ds_MerchantParameters: Swift.String
+  public var Ds_SignatureVersion: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Parameters : Swift.Codable {
+  public var Ds_Date: Swift.String?
+  public var Ds_Hour: Swift.String?
+  public var Ds_SecurePayment: Swift.String?
+  public var Ds_Amount: Swift.String?
+  public var Ds_Currency: Swift.String?
+  public var Ds_Order: Swift.String?
+  public var Ds_MerchantCode: Swift.String?
+  public var Ds_Terminal: Swift.String?
+  public var Ds_Response: Swift.String?
+  public var Ds_Signature: Swift.String?
+  public var Ds_TransactionType: Swift.String?
+  public var Ds_MerchantData: Swift.String?
+  public var Ds_AuthorisationCode: Swift.String?
+  public var Ds_ExpiryDate: Swift.String?
+  public var Ds_Merchant_Identifier: Swift.String?
+  public var Ds_ConsumerLanguage: Swift.String?
+  public var Ds_Card_Country: Swift.String?
+  public var Ds_Card_Brand: Swift.String?
+  public var Ds_Card_Number: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class WebViewPaymentResponseKO : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var code: Swift.Int
+  @objc public var desc: Swift.String
+  @objc override dynamic public init()
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}

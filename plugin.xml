@@ -28,6 +28,8 @@
       <preference name="SwiftVersion" value="5" />
     </config-file>
     <source-file src="src/ios/GalpBipDriveImpl.swift"/>
-    <lib-file src="libs/iOS/BipDriveCore.framework" />
+    <framework src="libs/iOS/Simulator/BipDriveCore.framework" custom="true" embed="true"/>
+    <framework src="libs/iOS/Simulator/BipDriveParkingmeters.framework" custom="true" embed="true"/>
+    <framework src="libs/iOS/Simulator/TPVVInLibrary.framework" custom="true" embed="true"/>
   </platform>
 </plugin>

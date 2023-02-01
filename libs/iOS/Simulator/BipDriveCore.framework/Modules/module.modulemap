@@ -1,0 +1,11 @@
+framework module BipDriveCore {
+  umbrella header "BipDriveCore.h"
+
+  export *
+  module * { export * }
+}
+
+module BipDriveCore.Swift {
+    header "BipDriveCore-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module BipDriveParkingmeters {
+  umbrella header "BipDriveParkingmeters.h"
+
+  export *
+  module * { export * }
+}
+
+module BipDriveParkingmeters.Swift {
+    header "BipDriveParkingmeters-Swift.h"
+    requires objc
+}
