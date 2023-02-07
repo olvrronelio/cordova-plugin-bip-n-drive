@@ -6,6 +6,6 @@ framework module BipDriveParkingmeters {
 }
 
 module BipDriveParkingmeters.Swift {
-    header "BipDriveParkingmeters-Swift.h"
-    requires objc
+  header "BipDriveParkingmeters-Swift.h"
+  requires objc
 }

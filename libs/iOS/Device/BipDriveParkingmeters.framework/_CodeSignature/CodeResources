@@ -4,41 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		YkyuhfYjWOxH2qLQSa0+ftbgUiU=
-		</data>
 		<key>BDParkingmetersView.nib</key>
 		<data>
-		8JsnjmDBvZi7zHWY0xR46k4XfDU=
+		jSuVUDAESCAtFcnUZVV9AF4Un9o=
 		</data>
 		<key>BSMParkingStoppedView.nib</key>
 		<data>
-		U/53GZSMoFcdYbijx6Fek8LL488=
+		4EPRmfgy4Isy4iLG2MfY8lv7aiU=
 		</data>
 		<key>CellRate.nib</key>
 		<data>
-		wN9hzWSZ0l8A9ikHnZ/mn+tZWIs=
+		KOrv4Ecl6nftxt8Tnl6towWF9qY=
 		</data>
 		<key>CellSection.nib</key>
 		<data>
-		PpnkGttIN130s3VQLKF+SXn1Bhw=
+		vCnMUT6LSifj+2JoQqL99FzfuAE=
 		</data>
 		<key>CellSelectedFast.nib</key>
 		<data>
-		WD9D6cIOLrjAfFwcFPcH0T/Yk9M=
+		AJ1xhc+bByARETexNrWKRk0991k=
 		</data>
 		<key>ComplaintsView.nib</key>
 		<data>
-		LHp/IDsMiyN4zqS/fxYOGY3XZxo=
+		oLlfzqgfuxppS6EXP7Iae07jefc=
 		</data>
 		<key>DurationAndAmountView.nib</key>
 		<data>
-		/fKNoXh96N+yfklgfz5qINXgDrU=
+		dQDdRBIWgPBTOVjQhyDh+H9qYpw=
 		</data>
 		<key>Headers/BipDriveParkingmeters-Swift.h</key>
 		<data>
-		D2RT7Iza9xCy6ZV8KJwsAfDoT1s=
+		tuX9NwPvvXiEs1adNRUmbBGWCUk=
 		</data>
 		<key>Headers/BipDriveParkingmeters.h</key>
 		<data>
@@ -46,43 +42,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		G28Bec9EgDu5PrMk0xPxVudp/CE=
+		PpD6POlrNUf0amz4Dp06QjoLl3c=
 		</data>
 		<key>Modules/BipDriveParkingmeters.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		jL4ndmMzI349ZAY+1EPn8mZBSz4=
+		VAyMBmpzfUd6rZJIu4TFNIFmIVU=
+		</data>
+		<key>Modules/BipDriveParkingmeters.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/BipDriveParkingmeters.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		33P4OpOoxru0yJ1MkrVvkCZGdB0=
+		lCiv0b7mxUFxi88jnmuvWuTjOlc=
 		</data>
 		<key>Modules/BipDriveParkingmeters.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7uMupymmM3C/0UktKWgzbcTWNys=
+		36R6X5JTWH9q1Gh9z21MKvRXknw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		PSt01tZ1q7ZnyRDkGcKQpBLATB0=
+		HpBGfi3dY/4aI2B/wcBxYitXTKA=
 		</data>
 		<key>SalesDetailView.nib</key>
 		<data>
-		hSwcXqY1ISyINVrLv8XYnFD+54Y=
+		fvsB4/tH6ASaxj2nz42LSlbwJJU=
 		</data>
 		<key>SectionSelectionView.nib</key>
 		<data>
-		LdQvRajPBTUrCtpNXzUXgOGak5A=
+		zyhd9X3Vj/5QKL5Iz0n/t8f4krg=
 		</data>
 		<key>SelectedRateView.nib</key>
 		<data>
-		MAr6W2+P0rIUKUTx/aVaVmmcWN4=
+		bra7E9TLu45Ca2ZVZmTBKXN2Lig=
 		</data>
 		<key>SuccessfulComplaintViewController.nib</key>
 		<data>
-		u5vbGp1N/QdykN+b5THPEbo4xRw=
+		VZziBR/P41pisrvtMO0xmfdGypM=
 		</data>
 		<key>TelparkViewController.nib</key>
 		<data>
-		yJtOyHVI5OKJDgVnlPWSEBtUhIY=
+		PbGd1JPg7kbGAPT8ACCfOO8pknI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -91,56 +91,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gs45kxx8GgJU2sKZimUgNCCtOxD8wuy8qk1zH4Gzbm0=
+			852Z0PKnZrze+cWkFr2vQbnrL6GOyP0Odf+dQ1tmfzc=
 			</data>
 		</dict>
 		<key>BSMParkingStoppedView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZLX7lWTfl+/XkwRHA0TaQgHMUVkyQrVe69zO3OqJwgI=
+			7ZK9z0ppy7lFZESwJXoGOgtWRWa5ugyOq/skFcTWlxo=
 			</data>
 		</dict>
 		<key>CellRate.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5RiMeEbjqBx+gwXZauFq7jQ90w3vs2Zc9IcUbe3PXs=
+			zXqd0RK1v1JK4e2JbKPPLaF0MpmTyCkT5BcCb3DsP20=
 			</data>
 		</dict>
 		<key>CellSection.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gkl1+l5LenXZJEylxY3PyFAuHZR/7sMjYjAIJpTy8fA=
+			kK0Yoz1VcE0pqvTdfEKuH9OC44wNcm9mWiEtnG/ezC8=
 			</data>
 		</dict>
 		<key>CellSelectedFast.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EtMEzctBf4y2dA/4EHCD0ldL3W+QjSW30m4aRZeMjXQ=
+			Wkcu5VD6qOgWpkEzpGvYsll7fnr3mClH9kXpfzz20d8=
 			</data>
 		</dict>
 		<key>ComplaintsView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jm/2Gt1TFcCwvrh8ZNu792GvbtNZ9AFOoWbF/npXXP8=
+			SyvxBxNnuPIuVL6v9og878AgC2g5KiZ/odGr5Mv4h3Q=
 			</data>
 		</dict>
 		<key>DurationAndAmountView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nXl/v4cfhDwMDDZWs/ARp9G1NjtnXCcborplQ+zMny0=
+			fdTt2BvdVD0NzQ26x9HU2nNJLVbApc8xQWjEACd6qpo=
 			</data>
 		</dict>
 		<key>Headers/BipDriveParkingmeters-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mlw1Hcj9yP0XX0ckivWALyWT1NDwvHtyRjgSmLsVeKU=
+			slzkJqLxKvwTWwe30dtljGl16tmss5jiEBtkeHUzMUU=
 			</data>
 		</dict>
 		<key>Headers/BipDriveParkingmeters.h</key>
@@ -154,63 +154,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			thcY3tZkeXr0hvnl+0a4Y5rQDJ0peAvqJ+2jrPTaYF8=
+			Ip7yjNQ4ZKs/QT1YBQgPGw8N6DkgqvjAD4B63DQVw4Y=
+			</data>
+		</dict>
+		<key>Modules/BipDriveParkingmeters.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/BipDriveParkingmeters.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FvRopUEqsj9HU9VN9n/pPsQ0xrkvl7SgFQ4RuRkY9Kk=
+			x7niOCiugMJiC+a9DxIDlm7SstXo7YTH9fKJNPhX86o=
 			</data>
 		</dict>
 		<key>Modules/BipDriveParkingmeters.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dlhtj6ueKoJlp/zf/mr0uPVT45hqK1K5RXati/3wHsg=
+			3XxR8E3tcqi8SucQ8rfl/qHz67tJZ0ZQSpIn9mmSmgM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7cpFboutfUjPujJa7MyifEKsOFxIoJWW3P8oTc79cVI=
+			QbNVeIPSQOCj76Em2qyDljGQpt+NOMOdxwMRLJ3bMeA=
 			</data>
 		</dict>
 		<key>SalesDetailView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7OFxgNWM22CrLv3pKBGU4/Vx1L3sIIRi44v96WcKTd4=
+			8w+qFH4UR8lqwvxS2tySYijDDO4F7el6u9WWCUOamFQ=
 			</data>
 		</dict>
 		<key>SectionSelectionView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A3jaAjK4fZgGs163zpuWl9mMiTBBij4kwKHk1LOAuwA=
+			QPlQ+KaDPp0j5R7TMBTwDkiUNAe5K30C7vnAGfSxOZI=
 			</data>
 		</dict>
 		<key>SelectedRateView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tcMLv2xvV3alfGIAVDSr7mjmJWzPKvZA3k+AKXCaEWk=
+			XyChIHwgyQ+rEFl50tJjypMzU5GdstxXiVa4myd7wzA=
 			</data>
 		</dict>
 		<key>SuccessfulComplaintViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBPab9pn+JiDTry9y7ffhYfWpr/bIn6tpSPOsGeJMoM=
+			yBm0gWO831Bx129HGQlayJXRxi0ybWHUE0BexMaI/Jk=
 			</data>
 		</dict>
 		<key>TelparkViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZ0kkoTG8nlInlEXTjJBeDatkRNoMeVC44sWd2ce//4=
+			pNQZc/NQ7WKJVjQlojP6XBwXunh/+lZyLSLKOnyPJlU=
 			</data>
 		</dict>
 	</dict>

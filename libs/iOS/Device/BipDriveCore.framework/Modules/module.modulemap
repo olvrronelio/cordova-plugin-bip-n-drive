@@ -6,6 +6,6 @@ framework module BipDriveCore {
 }
 
 module BipDriveCore.Swift {
-    header "BipDriveCore-Swift.h"
-    requires objc
+  header "BipDriveCore-Swift.h"
+  requires objc
 }

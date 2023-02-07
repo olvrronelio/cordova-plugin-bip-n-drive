@@ -57,5 +57,19 @@
     <framework src="libs/iOS/Device/BipDriveParkingmeters.framework" custom="true" embed="true"/>
     <framework src="libs/iOS/Device/TPVVInLibrary.framework" custom="true" embed="true"/>
 
+    <podspec>
+      <config>
+          <source url="https://github.com/CocoaPods/Specs.git" />
+      </config>
+        <pods use-frameworks="true">
+            <pod name="Alamofire"/>
+            <pod name="AlamofireImage" spec="~> 4.1" />
+            <pod name="CocoaMQTT"/>
+            <pod name="GooglePlaces"/>
+            <pod name="MaterialShowcase"/>
+            <pod name="ObjectMapper"/>
+            <pod name="SwiftKeychainWrapper"/>
+        </pods>
+    </podspec>
   </platform>
 </plugin>
