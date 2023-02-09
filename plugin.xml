@@ -52,8 +52,6 @@
     </config-file>
 
     <source-file src="src/ios/GalpBipDriveImpl.swift"/>
-    <source-file src="src/ios/GalpBipDriveViewController.swift"/>
-    <resource-file src="src/ios/GalpBipDrive.storyboard"/>
 
     <framework src="libs/iOS/Device/BipDriveCore.framework" custom="true" embed="true"/>
     <framework src="libs/iOS/Device/BipDriveParkingmeters.framework" custom="true" embed="true"/>
