@@ -22,12 +22,12 @@ import BipDriveParkingmeters
         )
     }
 
-  @objc(openSDK:)
-  func openSDK(_ command: CDVInvokedUrlCommand) {
+  @objc(launchParkingMeter:)
+  func launchParkingMeter(_ command: CDVInvokedUrlCommand) {
 
       self.callbackId = command.callbackId;
       
-      if(command.methodName == "openSDK") {
+      if(command.methodName == "launchParkingMeter") {
           
           var pListInfo: [String: Any]?
                   
